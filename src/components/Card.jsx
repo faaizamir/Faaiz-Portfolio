@@ -6,16 +6,16 @@ const Card = () => {
     <div>
       <div className="w-full mb-6 lg:mb-0 mx-auto relative bg-white text-center dark:bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
         <img
-          src="/static/media/avatar.418c8afc380507acd425.jpg"
+          src="/profile-pic-square-hd.png"
           className="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px]"
           alt=""
         />
         <div className="pt-[100px] pb-8">
           <h1 className="mt-6 mb-1 text-3xl font-semibold dark:text-white">
-            Monalisa Ashley
+            Faaiz Amir
           </h1>
           <h3 className="mb-4 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]">
-            Ui/Ux Designer
+            Frontend Developer
           </h3>
           <div className="flex justify-center space-x-3">
             <a
@@ -119,7 +119,7 @@ const Card = () => {
                     className="hover:text-[#FA5252] duration-300 transition"
                     href="tel:+1234567890"
                   >
-                    +123 456 7890
+                    +92 315 4879020
                   </a>
                 </p>
               </div>
@@ -147,7 +147,7 @@ const Card = () => {
                     className="hover:text-[#FA5252] duration-300 transition"
                     href="mailto:ibthemes21@gmail.com"
                   >
-                    example@mail.com
+                    faaizammir@gmail.com
                   </a>
                 </p>
               </div>
@@ -170,7 +170,7 @@ const Card = () => {
                 <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
                   Location
                 </p>
-                <p className="dark:text-white break-all">Hong kong china</p>
+                <p className="dark:text-white break-all">Karachi, Pakistan.</p>
               </div>
             </div>
             <div className="flex py-2.5">
@@ -191,16 +191,16 @@ const Card = () => {
                 <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
                   Birthday
                 </p>
-                <p className="dark:text-white break-all">May 27, 1990</p>
+                <p className="dark:text-white break-all">Jan 09, 2004</p>
               </div>
             </div>
           </div>
           <a
-            href="/static/media/cv.174d8bc4469f8aa7c5fa.webp"
+            href="/FaaizAmir-Resume.pdf"
             download=""
             className="inline-flex items-center mx-auto bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476] to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6"
           >
-            <img src="" alt="" className="mr-2" /> Download CV
+            <img src="/download.png" alt="" className="mr-2" /> Download CV
           </a>
         </div>
       </div>

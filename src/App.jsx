@@ -2,6 +2,7 @@
 // import BIRDS from 'vanta/dist/vanta.birds.min';
 import Card from './components/Card';
 import Nav from './components/Nav';
+import {Outlet} from 'react-router-dom';
 function App() {
   // const [vantaEffect, setVantaEffect] = useState(null);
   // const myRef = useRef(null);
@@ -53,13 +54,12 @@ function App() {
                 <Nav />  
             </header>
             <section>
-              <div className="lg:rounded-2xl bg-white dark:bg-[#111111]">
+              <div className="lg:rounded-2xl bg-white dark:bg-[#1d1d1d]">
                 <div data-aos="fade" className="aos-init aos-animate">
-                  <div className="pt-12 md:py-12 px-2 sm:px-5 md:px-10 lg:px-14">
+                    <Outlet />
                     <footer className="overflow-hidden rounded-b-2xl" style={{ background: 'transparent' }}>
-                      <p className="text-center py-6 text-gray-lite dark:text-color-910">© 2022 All Rights Reserved by <a className="hover:text-[#FA5252] duration-300 transition" href="https://themeforest.net/user/ib-themes" target="_blank" rel="noopener noreferrer">ib-themes</a>.</p>
+                      <p className="text-center py-6 text-[#a6a6a6]">© 2022 All Rights Reserved by <a className="hover:text-[#FA5252] duration-300 transition" href="https://linkedin.com/faaiz-amir" target="_blank" rel="noopener noreferrer">Faaiz Amir</a>.</p>
                     </footer>
-                  </div>
                 </div>
               </div>
             </section>
