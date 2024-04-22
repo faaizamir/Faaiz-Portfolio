@@ -8,7 +8,7 @@ const Nav = () => {
         isActive={(match, location) => {
           if (!match) {
             return false;
-          }
+          } 
           return true;
         }}
       >
