@@ -1,7 +1,8 @@
-// import React, { useState, useEffect, useRef } from 'react';
-// import BIRDS from 'vanta/dist/vanta.birds.min';
+// import { useState, useEffect, useRef } from 'react';
+// import WAVES from 'vanta/dist/vanta.waves.min';
 import Card from './components/Card';
 import Nav from './components/Nav';
+import MobileNav from  './components/MobileNav';
 import {Outlet} from 'react-router-dom';
 function App() {
   // const [vantaEffect, setVantaEffect] = useState(null);
@@ -10,23 +11,21 @@ function App() {
   // useEffect(() => {
   //   if (!vantaEffect) {
   //     setVantaEffect(
-  //       BIRDS({
+  //       WAVES({
   //         el: myRef.current,
-  //         backgroundColor: 0x241731,
   //         mouseControls: true,
   //         touchControls: true,
   //         gyroControls: false,
-  //         minHeight: 200.0,
-  //         minWidth: 200.0,
-  //         scale: 1.0,
-  //         scaleMobile: 1.0,
-  //         birdSize: 2.9,
-  //         wingSpan: 19.0,
-  //         separation: 50.0,
-  //         alignment: 4.0,
-  //         cohesion: 40.0,
-  //         quantity: 4.0 - 0.18,
-  //         size: 1.3,
+  //         minHeight: 200.00,
+  //         minWidth: 200.00,
+  //         scale: 1.00,
+  //         scaleMobile: 1.00,
+  //         color: 0x1b1b1b,
+  //         shininess: 5.00,
+  //         waveHeight: 15.00,
+  //         waveSpeed: 1.50,
+  //         zoom: 0.75,
+
   //       })
   //     );
   //   }
@@ -44,17 +43,20 @@ function App() {
       ></div>
 
       {/* Content container with scrollbar */}
-      <div className="container m-auto h-screen z-10 pt-36 ">
-        <div className="template grid grid-cols-12 gap-5 grid-flow-row mt-40 mx-20">
-          <div className="left col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-44">
+      <div className="lg:container lg:m-auto h-screen z-10 p-0 m-0  lg:pt-36 ">
+        <div className="template grid grid-cols-12 gap-5 xl:gap-10 grid-flow-row lg:mt-40 xl:mx-20">
+          <div className="left col-span-12 lg:col-span-5 xl:col-span-4 hidden lg:block h-screen sticky top-44">
             <Card />
           </div>
-          <div className="right col-span-12 lg:col-span-8 ">
+          <div className="right col-span-12 lg:col-span-7 xl:col-span-8">
             <header className="lg:w-[526px] h-[144px] hidden lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-white dark:bg-[#111111]">
                 <Nav />  
             </header>
+            <header className='lg:hidden'>
+                <MobileNav/>
+            </header>
             <section>
-              <div className="lg:rounded-2xl bg-white dark:bg-[#1d1d1d]">
+              <div className="lg:rounded-2xl bg-primary">
                 <div data-aos="fade" className="aos-init aos-animate">
                     <Outlet />
                     <footer className="overflow-hidden rounded-b-2xl" style={{ background: 'transparent' }}>
