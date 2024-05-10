@@ -4,7 +4,9 @@ import Card from './components/Card';
 import Nav from './components/Nav';
 import MobileNav from  './components/MobileNav';
 import {Outlet} from 'react-router-dom';
+import AOS from 'aos';
 function App() {
+  AOS.init();
   // const [vantaEffect, setVantaEffect] = useState(null);
   // const myRef = useRef(null);
 

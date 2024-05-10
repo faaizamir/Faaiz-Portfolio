@@ -9,9 +9,22 @@ import Card from "./Card";
 const About = () => {
   return (
     <div className="pt-12 md:py-12 px-3 sm:px-5 md:px-10 lg:px-14 ">
-      <h2 className="after-effect after:left-52 text-white text-4xl md:text-5xl font-medium lg:pb-4">
+      {/* <h2 className="after:content-[''] after:sm:w-3 after:h-[3px] after:bg-gradient-to-r  from-[#DD2476] to-[#fa5252ef] after:left-52 text-white text-4xl md:text-5xl font-medium lg:pb-4">
         About Me
+      </h2> */}
+      <h2 className="relative text-white text-4xl md:text-5xl font-medium lg:pb-4 from-[#DD2476] after:h-1 to-[#fa5252ef] after:content-[''] after:absolute after:w-48 after:hidden sm:after:block after:bg-gradient-to-r after:left-52 lg:after:left-1/2 2xl:after:left-1/3 after:top-1/2 after:transform after:-translate-y-1/2">
+        About Me
+        {/* <span className="absolute h-1 w-48 bg-gradient-to-r from-[#DD2476] to-[#fa5252ef] left-1/3 top-1/3 "></span> */}
       </h2>
+
+      
+
+
+
+
+
+
+
       <div className="lg:hidden">
         <div>
           {/* <div className="w-full mb-6 lg:mb-0 mx-auto relative bg-white text-center dark:bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
@@ -38,11 +51,24 @@ const About = () => {
           <Card />
         </div>
       </div>
-      <div className="pb-12 px-2 sm:px-5 md:px-10 lg:px-1">
+      <p className="text-[#A6A6A6]">
+        I am Faaiz Amir, a dedicated front-end developer, currently pursuing a
+        Bachelor&apos;s in Computer Science. With a solid foundation in HTML,
+        CSS, JavaScript, and Tailwind CSS, I have successfully crafted several
+        visually appealing and responsive websites.<br/><br/> Presently, my focus lies on
+        mastering React.js to further enhance my proficiency in front-end
+        development. I possess a proactive approach to learning, constantly
+        seeking to broaden my skill set and tackle new challenges. <br/><br/>Beyond
+        coding, I find solace in activities such as chess, football, and gaming,
+        offering a well-rounded perspective that informs my professional
+        endeavors. <br/><br/>Let&apos;s collaborate to bring your web projects to
+        fruition!
+      </p>
+      <div className="pb-12 px-2 sm:px-5 md:px-10 lg:px-1 my-6">
         <h3 className="text-[35px] dark:text-white font-medium pb-5">
           What I do!
         </h3>
-        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 border-2 border-[#212425] rounded-xl p-5">
+        {/* <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 border-2 border-[#212425] rounded-xl p-5">
           <div className="about-box bg-transparent flex gap-5">
             <img
               className="w-10 h-10 object-contain block"
@@ -95,7 +121,7 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* <div className="lg:grid grid-cols-12 md:gap-10 pt-4 md:pt-[30px] items-center hidden">
@@ -114,8 +140,6 @@ const About = () => {
           </div>
         </div>
       </div> */}
-      
-      
     </div>
   );
 };
