@@ -1,4 +1,4 @@
-import React from 'react';
+// Code: Main file for the application
 import ReactDOM from 'react-dom';
 import App from './App.jsx';
 import './index.css';
@@ -12,8 +12,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route index element={<About />} /> {/* Changed to About */}
-        <Route path="/resume" element={<Resume />} /> {/* Changed to Resume */}
+        <Route index element={<About />} />
+        <Route path="/resume" element={<Resume />} /> 
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Route>

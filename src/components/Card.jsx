@@ -1,82 +1,48 @@
-
-
 import "../App.css";
 const Card = () => {
   return (
     <>
-      <div className="w-full mb-6 lg:mb-0 mx-auto relative bg-white text-center dark:bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
+      <div className="w-full mb-6 lg:mb-0 mx-auto relative  text-center bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
+        {/* Main Profile Image */}
         <img
           src="/profile-pic-square-hd.png"
           className="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px]"
           alt=""
         />
+
+        {/* Profile Details */}
         <div className="pt-[100px] pb-8">
-          <h1 className="mt-6 mb-4 text-4xl font-bold dark:text-white font-poppins">
+          <h1 className="mt-6 mb-4 text-4xl font-bold text-white font-poppins">
             Faaiz Amir
           </h1>
-          <h3 className="mb-4 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]">
+          <h3 className="mb-4  inline-block bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-[#A6A6A6]">
             Frontend Developer
           </h3>
           <div className="flex justify-center space-x-3">
             <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="socialbtn text-[#1773EA]">
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth="0"
-                  viewBox="0 0 320 512"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
-                </svg>
-              </span>
-            </a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="socialbtn text-[#1C9CEA]">
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth="0"
-                  viewBox="0 0 512 512"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
-                </svg>
-              </span>
-            </a>
-            <a
-              href="https://dribbble.com/"
+              href="https://github.com/faaizamir"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span className="socialbtn text-[#e14a84]">
                 <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth="0"
-                  viewBox="0 0 512 512"
-                  height="1em"
-                  width="1em"
                   xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  fill="white"
+                  width="2em"
+                  height="2em"
+                  viewBox="0 0 32 32"
                 >
-                  <path d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"></path>
+                  <path
+                    fillRule="evenodd"
+                    d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z"
+                  ></path>
                 </svg>
               </span>
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/faaiz-amir"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -95,9 +61,11 @@ const Card = () => {
               </span>
             </a>
           </div>
-          <div className="p-3 lg:p-7 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D] text-sm md:text-base">
-            <div className="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
-              <span className="flex-shrink-0 socialbtn bg-white dark:bg-black text-[#E93B81] shadow-md">
+
+          {/* Contact Information */}
+          <div className="p-3 lg:p-7 rounded-2xl mt-7  bg-[#1D1D1D] text-sm md:text-base">
+            <div className="flex border-b  border-[#3D3A3A] pb-2.5">
+              <span className="flex-shrink-0 socialbtn  bg-black text-[#E93B81] shadow-md">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -111,21 +79,19 @@ const Card = () => {
                 </svg>
               </span>
               <div className="text-left ml-2.5">
-                <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
-                  Phone
-                </p>
-                <p className="dark:text-white break-all">
+                <p className="text-xs  text-[#A6A6A6]">Phone</p>
+                <p className="text-white break-all">
                   <a
                     className="hover:text-[#FA5252] duration-300 transition"
-                    href="tel:+1234567890"
+                    href="tel:+92 315 4879020"
                   >
                     +92 315 4879020
                   </a>
                 </p>
               </div>
             </div>
-            <div className="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] py-2.5">
-              <span className="flex-shrink-0 socialbtn bg-white dark:bg-black text-[#6AB5B9] shadow-md">
+            <div className="flex border-b  border-[#3D3A3A] py-2.5">
+              <span className="flex-shrink-0 socialbtn  bg-black text-[#6AB5B9] shadow-md">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -139,10 +105,8 @@ const Card = () => {
                 </svg>
               </span>
               <div className="text-left ml-2.5">
-                <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
-                  Email
-                </p>
-                <p className="dark:text-white break-all">
+                <p className="text-xs  text-[#A6A6A6]">Email</p>
+                <p className="text-white break-all">
                   <a
                     className="hover:text-[#FA5252] duration-300 transition"
                     href="mailto:ibthemes21@gmail.com"
@@ -152,8 +116,8 @@ const Card = () => {
                 </p>
               </div>
             </div>
-            <div className="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] py-2.5">
-              <span className="flex-shrink-0 socialbtn bg-white dark:bg-black text-[#FD7590] shadow-md">
+            <div className="flex border-b border-[#3D3A3A] py-2.5">
+              <span className="flex-shrink-0 socialbtn  bg-black text-[#FD7590] shadow-md">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -167,14 +131,12 @@ const Card = () => {
                 </svg>
               </span>
               <div className="text-left ml-2.5">
-                <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
-                  Location
-                </p>
-                <p className="dark:text-white break-all">Karachi, Pakistan.</p>
+                <p className="text-xs  text-[#A6A6A6]">Location</p>
+                <p className="text-white break-all">Karachi, Pakistan.</p>
               </div>
             </div>
             <div className="flex py-2.5">
-              <span className="flex-shrink-0 socialbtn bg-white dark:bg-black text-[#C17CEB] shadow-md">
+              <span className="flex-shrink-0 socialbtn  bg-black text-[#C17CEB] shadow-md">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -188,13 +150,13 @@ const Card = () => {
                 </svg>
               </span>
               <div className="text-left ml-2.5">
-                <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
-                  Birthday
-                </p>
-                <p className="dark:text-white break-all">Jan 09, 2004</p>
+                <p className="text-xs  text-[#A6A6A6]">Birthday</p>
+                <p className="text-white break-all">Jan 09, 2004</p>
               </div>
             </div>
           </div>
+
+          {/* Download CV Button */}
           <a
             href="/FaaizAmir-Resume.pdf"
             download=""
