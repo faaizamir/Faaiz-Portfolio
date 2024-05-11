@@ -46,7 +46,7 @@ const Resume = () => {
                 </span>
                 <h3 className="text-xl text-white">BS in Computer Science</h3>
                 <p className="text-[#b7b7b7]">
-                  Sindh Madressah tul University, Karachi.
+                  Sindh Madressah-tul-Islam University.
                 </p>
               </div>
               <div
