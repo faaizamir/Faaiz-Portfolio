@@ -21,7 +21,7 @@ const About = () => {
         {/* About Me Heading */}
         <div className="px-3 sm:px-5 md:px-10 lg:px-14 ">
           <h2
-            className="relative text-white text-4xl md:text-5xl font-medium lg:pb-4 
+            className="relative text-white text-4xl md:text-5xl font-semibold lg:pb-4 
                         from-[#DD2476] to-[#fa5252ef] 
                         after:content-[''] after:absolute 
                         after:w-48 after:h-[3px]

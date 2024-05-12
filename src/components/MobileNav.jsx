@@ -10,30 +10,30 @@ const MobileNav = () => {
         src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
         defer
       ></script>
-      <div className="bg-[#212425] py-4 flex flex-col">
+      <div className="bg-[#212425] py-3 flex flex-col fixed top-0 w-full z-10">
         <div className="relative px-4  flex justify-end">
           <button
-            className="text-pink-500 z-50 w-8 h-8 relative focus:outline-none bg-[#212425]"
+            className="text-[#ef4060] z-50 w-8 h-8 relative focus:outline-none bg-[#212425]"
             onClick={() => setOpen(!open)}
           >
             <span className="sr-only">Open main menu</span>
-            <div className="block w-3 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-3 absolute left-1/3 top-1/3 transform -translate-x-1/2 -translate-y-1/2">
               <span
                 aria-hidden="true"
-                className={`block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out mb-2 ${
-                  open ? "rotate-45 mb-0" : "-translate-y-0.5"
+                className={`block absolute h-0.5 w-5  bg-current transform transition duration-500 ease-in-out  ${
+                  open ? "rotate-45 mb-0" : "-translate-y-0.5 mb-2"
                 }`}
               ></span>
               <span
                 aria-hidden="true"
-                className={`block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out my-1 ${
-                  open ? "opacity-0 my-0" : ""
+                className={`block absolute h-0.5 w-5  bg-current transform transition duration-500 ease-in-out  ${
+                  open ? "opacity-0 my-0" : "my-1"
                 }`}
               ></span>
               <span
                 aria-hidden="true"
-                className={`block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out mt-2 ${
-                  open ? "-rotate-45 mt-0" : "translate-y-0.5"
+                className={`block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out   ${
+                  open ? "-rotate-45 m-0" : "translate-y-0.5 mt-2"
                 }`}
               ></span>
             </div>

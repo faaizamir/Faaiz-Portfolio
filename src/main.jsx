@@ -1,19 +1,20 @@
-// Code: Main file for the application
-import ReactDOM from 'react-dom';
-import App from './App.jsx';
-import './index.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Fixed import
-import About from './components/About';
-import Resume from './components/Resume';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import { createRoot } from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./index.css";
+import App from "./App";
+import About from "./components/About";
+import Resume from "./components/Resume";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import DynamicTitle from "./components/DynamicTitle";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <Router>
+    <DynamicTitle />
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<About />} />
-        <Route path="/resume" element={<Resume />} /> 
+        <Route path="/resume" element={<Resume />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
