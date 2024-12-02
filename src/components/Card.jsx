@@ -66,7 +66,7 @@ const Card = () => {
           {/* Contact Information */}
           <div className="p-3 lg:p-7 rounded-2xl mt-7  bg-[#1D1D1D] text-sm md:text-base">
             <div className="flex border-b  border-[#3D3A3A] pb-2.5">
-              <span className="flex-shrink-0 socialbtn  bg-black text-[#E93B81] shadow-md">
+              <span className="flex-shrink-0 socialbtn  !bg-black text-[#E93B81] shadow-md">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -92,7 +92,7 @@ const Card = () => {
               </div>
             </div>
             <div className="flex border-b  border-[#3D3A3A] py-2.5">
-              <span className="flex-shrink-0 socialbtn  bg-black text-[#6AB5B9] shadow-md">
+              <span className="flex-shrink-0 socialbtn  !bg-black text-[#6AB5B9] shadow-md">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -118,7 +118,7 @@ const Card = () => {
               </div>
             </div>
             <div className="flex border-b border-[#3D3A3A] py-2.5">
-              <span className="flex-shrink-0 socialbtn  bg-black text-[#FD7590] shadow-md">
+              <span className="flex-shrink-0 socialbtn  !bg-black text-[#FD7590] shadow-md">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -137,7 +137,7 @@ const Card = () => {
               </div>
             </div>
             <div className="flex py-2.5">
-              <span className="flex-shrink-0 socialbtn  bg-black text-[#C17CEB] shadow-md">
+              <span className="flex-shrink-0 socialbtn  !bg-black text-[#C17CEB] shadow-md">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
