@@ -102,7 +102,9 @@ const Resume = () => {
                   October 2024 - Present
                 </span>
                 <h3 className="text-xl text-white">Frontend Developer</h3>
-                <Link to={"https://www.premed.pk/"} target="blank" className="text-[#b7b7b7] hover:text-[#ec5863]">PreMed.pk</Link>
+                <p>
+                  <Link to={"https://www.premed.pk/"} target="blank" className="text-[#b7b7b7] hover:text-[#ec5863]">PreMed.pk</Link>
+                </p>
               </div>
               <div
                 className="py-4 pl-5 pr-3 space-y-2 rounded-lg mb-6 border-[#212425] border-2"
