@@ -8,6 +8,8 @@ import { Outlet } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Loader from "./components/Loader";
+import particlesJS from "particles.js";
+
 // import particlesJS from "particles.js";
 
 function App() {
