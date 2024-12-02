@@ -159,7 +159,7 @@ const Card = () => {
 
           {/* Download CV Button */}
           <a
-            href="/FaaizAmir-Resume.pdf"
+            href="/Faaiz_Amir_Resume.pdf"
             download=""
             className="inline-flex items-center mx-auto bg-gradient-to-r  duration-300 transition ease-linear hover:bg-gradient-to-l from-[#DD2476] to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6"
           >
