@@ -9,6 +9,8 @@ import {
 } from "react-icons/fa";
 import { SiMysql, SiNetlify } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
+import { RiNextjsLine } from "react-icons/ri";
+import { SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import Card from "./Card";
@@ -43,7 +45,7 @@ const About = () => {
         </div>
 
         {/* About Content */}
-        <p className="text-[#A6A6A6] pt-4 px-3 sm:px-5 md:px-10 lg:px-14 ">
+        {/* <p className="text-[#A6A6A6] pt-4 px-3 sm:px-5 md:px-10 lg:px-14 ">
           Hello! I am{" "}
           <span className="font-semibold text-xl text-[#fa5252ef] ">Faaiz</span>
           , a dedicated{" "}
@@ -64,6 +66,23 @@ const About = () => {
           take pride in my work and always strive to exceed expectations on
           every project. I am a proactive learner and I am always looking for
           ways to improve my skills and solve new problems.
+        </p> */}
+        <p className="text-[#A6A6A6] pt-4 px-3 sm:px-5 md:px-10 lg:px-14 ">
+          Hello! I am{" "}
+          <span className="font-semibold text-xl text-[#fa5252ef] ">Faaiz</span>
+          , a dedicated{" "}
+          <span className="font-semibold text-lg rounded-xl   text-[#fa5252ef] ">
+            Front-end Developer
+          </span>{" "}
+           with solid experience in
+          React.js. I enjoy creating smooth, interactive interfaces that make
+          websites both functional and visually appealing. Right now, I’m
+          learning Next.js to take my skills to the next level.<br /><br />I love turning
+          ideas into real, working websites that people can use and enjoy. My
+          focus is always on writing clean code and designing layouts that work
+          well and look great.<br /><br />When I’m not coding, I’m usually exploring new
+          tools and techniques to improve what I do. I’m always looking for
+          better ways to solve problems and build something meaningful.
         </p>
 
         {/* What I do */}
@@ -127,7 +146,7 @@ const About = () => {
         <section className="w-full bg-[#0d0d0d] relative px-3 sm:px-5 md:px-10 lg:px-14 py-6">
           <div className="pb-4 px-2 sm:px-5 md:px-10 lg:px-1 my-6">
             <h3 className="text-5xl text-white font-bold pb-4 md:pb-10">
-              Skills.
+              Skills & Tools
             </h3>
             <div className=" grid grid-flow-row gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4">
               <div className="cardItem flex gap-5 items-center flex-col justify-center border-2 border-[#212425] rounded-xl p-6 bg-secondary">
@@ -147,6 +166,14 @@ const About = () => {
                 </div>
               </div>
               <div className="cardItem flex gap-5 items-center flex-col justify-center border-2 border-[#212425] rounded-xl p-6 bg-secondary">
+                <RiTailwindCssFill className="socialIcon w-12 h-12 object-contain block text-[#22D3EE]" />
+                <div className="space-y-2 break-all">
+                  <h3 className="text-white text-center text-sm md:text-lg lg:text-sm 2xl:text-lg font-medium">
+                    Tailwind
+                  </h3>
+                </div>
+              </div>
+              <div className="cardItem flex gap-5 items-center flex-col justify-center border-2 border-[#212425] rounded-xl p-6 bg-secondary">
                 <IoLogoJavascript className="socialIcon w-12 h-12 object-contain block text-[#F7DF1E]" />
                 <div className="space-y-2 break-all">
                   <h3 className="text-white text-center text-sm md:text-lg lg:text-sm 2xl:text-lg font-medium">
@@ -162,27 +189,31 @@ const About = () => {
                   </h3>
                 </div>
               </div>
-              <div className="cardItem flex gap-5 items-center flex-col justify-center border-2 border-[#212425] rounded-xl p-6 bg-secondary">
-                <RiTailwindCssFill className="socialIcon w-12 h-12 object-contain block text-[#22D3EE]" />
-                <div className="space-y-2 break-all">
-                  <h3 className="text-white text-center text-sm md:text-lg lg:text-sm 2xl:text-lg font-medium">
-                    Tailwind
-                  </h3>
-                </div>
-              </div>
+              
               <div className="cardItem flex gap-5 items-center flex-col justify-center border-2 border-[#212425] rounded-xl p-6 bg-secondary">
                 <FaNodeJs className="socialIcon w-12 h-12 object-contain block text-[#339933]" />
                 <div className="space-y-2 break-all">
                   <h3 className="text-white text-center text-sm md:text-lg lg:text-sm 2xl:text-lg font-medium">
-                    Node JS
+                    NodeJS
                   </h3>
                 </div>
               </div>
               <div className="cardItem flex gap-5 items-center flex-col justify-center border-2 border-[#212425] rounded-xl p-6 bg-secondary">
-                <SiMysql className="socialIcon w-12 h-12 object-contain block text-[#007ACC]" />
+                {/* <SiMysql className="socialIcon w-12 h-12 object-contain block text-[#007ACC]" /> */}
+                {/* <RiNextjsFill className="socialIcon w-12 h-12 object-contain block fill-black" /> */}
+                <RiNextjsLine className="socialIcon w-12 h-12 object-contain block text-black"/>
                 <div className="space-y-2 break-all">
                   <h3 className="text-white text-center text-sm md:text-lg lg:text-sm 2xl:text-lg font-medium">
-                    SQL
+                    NextJS
+                  </h3>
+                </div>
+              </div>
+              <div className="cardItem flex gap-5 items-center flex-col justify-center border-2 border-[#212425] rounded-xl p-6 bg-secondary">
+                {/* <FaGitAlt className="socialIcon w-12 h-12 object-contain block text-[#FC6D26]" /> */}
+                <SiTypescript className="socialIcon w-12 h-12 object-contain block text-[#3178c6]"/>
+                <div className="space-y-2 break-all">
+                  <h3 className="text-white text-center text-sm md:text-lg lg:text-sm 2xl:text-lg font-medium">
+                    TypeScript
                   </h3>
                 </div>
               </div>
@@ -194,15 +225,7 @@ const About = () => {
                   </h3>
                 </div>
               </div>
-              <div className="cardItem flex gap-5 items-center flex-col justify-center border-2 border-[#212425] rounded-xl p-6 bg-secondary">
-                <FaGitAlt className="socialIcon w-12 h-12 object-contain block text-[#FC6D26]" />
-                <div className="space-y-2 break-all">
-                  <h3 className="text-white text-center text-sm md:text-lg lg:text-sm 2xl:text-lg font-medium">
-                    Git Version <br />
-                    Control
-                  </h3>
-                </div>
-              </div>
+              
               <div className="cardItem flex gap-5 items-center flex-col justify-center border-2 border-[#212425] rounded-xl p-6 bg-secondary">
                 <FaFigma className="socialIcon w-12 h-12 object-contain block text-[#A259FF]" />
                 <div className="space-y-2 break-all">

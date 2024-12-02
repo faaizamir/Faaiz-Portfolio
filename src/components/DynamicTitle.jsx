@@ -8,7 +8,7 @@ const DynamicTitle = () => {
     const getTitle = () => {
       switch (location.pathname) {
         case "/":
-          return "Faaiz React Portfolio";
+          return "Faaiz - Portfolio";
         case "/about":
           return "About - Faaiz Amir";
         case "/resume":

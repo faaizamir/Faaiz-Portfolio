@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Resume = () => {
   return (
     <div data-aos="fade" className="aos-init" data-aos-duration="1500">
@@ -93,11 +95,31 @@ const Resume = () => {
                 <h4 className="text-3xl text-white font-medium">Experience</h4>
               </div>
               <div
+                className="py-4 pl-5 pr-3 space-y-2 rounded-lg mb-6 border-[#212425] border-2"
+                style={{ background: "transparent" }}
+              >
+                <span className="text-tiny text-gray-lite text-[#b7b7b7]">
+                  October 2024 - Present
+                </span>
+                <h3 className="text-xl text-white">Frontend Developer</h3>
+                <Link to={"https://www.premed.pk/"} target="blank" className="text-[#b7b7b7] hover:text-[#ec5863]">PreMed.pk</Link>
+              </div>
+              <div
+                className="py-4 pl-5 pr-3 space-y-2 rounded-lg mb-6 border-[#212425] border-2"
+                style={{ background: "transparent" }}
+              >
+                <span className="text-tiny text-gray-lite text-[#b7b7b7]">
+                  July 2024 - September 2024 
+                </span>
+                <h3 className="text-xl text-white">Frontend Developer Intern</h3>
+                <p className="text-[#b7b7b7]">BUILDD</p>
+              </div>
+              <div
                 className="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg border-[#212425] border-2"
                 style={{ background: "transparent" }}
               >
                 <span className="text-tiny text-gray-lite text-[#b7b7b7]">
-                  2024 - March
+                  March 2024 - April 2024
                 </span>
                 <h3 className="text-xl text-white">React JS Intern</h3>
                 <p className="text-[#b7b7b7]">Internee.pk - Remote</p>
@@ -107,7 +129,7 @@ const Resume = () => {
                 style={{ background: "transparent" }}
               >
                 <span className="text-tiny text-gray-lite text-[#b7b7b7]">
-                  2022 - 2023
+                  December 2021 - Febuary 2023
                 </span>
                 <h3 className="text-xl text-white">Sr. Sales Executive</h3>
                 <p className="text-[#b7b7b7]">24/7 Artworks</p>
