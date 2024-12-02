@@ -8,9 +8,6 @@ import { Outlet } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Loader from "./components/Loader";
-import particlesJS from "particles.js";
-
-// import particlesJS from "particles.js";
 
 function App() {
   AOS.init();
@@ -19,10 +16,18 @@ function App() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   
-  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-  particlesJS.load('particles-js', '/particlesjs-config.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
+  // useEffect(() => {
+  //   // Check if particlesJS is available globally
+  //   if (window.particlesJS) {
+  //     // Initialize particlesJS with the config file
+  //     window.particlesJS.load('particles-js', '/particlesjs-config.json', function() {
+  //       console.log('callback - particles.js config loaded');
+  //     });
+  //   } else {
+  //     console.error('particlesJS is not defined!');
+  //   }
+  // }, []);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -40,40 +45,41 @@ function App() {
     fetchData();
   }, []);
 
-  // const [vantaEffect, setVantaEffect] = useState(null);
-  // const myRef = useRef(null);
+  const [vantaEffect, setVantaEffect] = useState(null);
+  const myRef = useRef(null);
 
-  // useEffect(() => {
-  //   if (!vantaEffect) {
-  //     setVantaEffect(
-  //       WAVES({
-  //         el: myRef.current,
-  //         mouseControls: true,
-  //         touchControls: true,
-  //         gyroControls: false,
-  //         minHeight: 200.00,
-  //         minWidth: 200.00,
-  //         scale: 1.00,
-  //         scaleMobile: 1.00,
-  //         color: 0x1b1b1b,
-  //         shininess: 5.00,
-  //         waveHeight: 15.00,
-  //         waveSpeed: 1.50,
-  //         zoom: 0.75,
-  //       })
-  //     );
-  //   }
-  //   return () => {
-  //     if (vantaEffect) vantaEffect.destroy();
-  //   };
-  // }, [vantaEffect]);
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        WAVES({
+          el: myRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x1b1b1b,
+          shininess: 5.00,
+          waveHeight: 15.00,
+          waveSpeed: 1.50,
+          zoom: 0.75,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
 
   return (
     <div className="h-screen w-screen overflow-x-hidden relative">
 
       {loading && <Loader />}
-      {/* <div ref={myRef} className="fixed inset-0 -z-10 pointer-events-none hidden lg:block"></div> */}
-      <div id="particles-js" className="fixed inset-0   hidden lg:block"></div>
+      <div ref={myRef} className="fixed inset-0 -z-10 pointer-events-none hidden lg:block"></div>
+      {/* <div id="particles-js" className="fixed inset-0   hidden lg:block"></div> */}
+      {/* <div id="particles-js" className="fixed inset-0 hidden lg:block"></div> */}
       {/* <div id="particles-js" className="fixed inset-0 w-full pointer-events-none hidden lg:block"></div> */}
       {!loading && (
         <div className="lg:container lg:m-auto h-screen relative p-0 m-0  lg:pt-36">
