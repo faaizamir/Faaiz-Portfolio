@@ -88,7 +88,7 @@ function App() {
               <Card />
             </div>
             <div className="right col-span-12 lg:col-span-7 xl:col-span-8">
-              <header className="lg:w-[526px] h-[144px] hidden lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-white dark:bg-[#111111]">
+              <header className="lg:w-[526px] h-[144px] hidden lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-[#111111]">
                 <Nav />
               </header>
               <header className="lg:hidden">

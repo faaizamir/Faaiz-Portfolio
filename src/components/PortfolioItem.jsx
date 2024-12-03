@@ -18,7 +18,7 @@ const PortfolioItem = ({
 
   return (
     <div className="portfolio-item" onClick={handleItemClick}>
-      <div className="rounded-lg p-6 dark:border-[2px] border-[#212425]">
+      <div className="rounded-lg p-6 border-[2px] border-[#212425]">
         <div className="overflow-hidden rounded-lg relative">
           <img
             className="w-full cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 rounded-lg h-auto"
@@ -37,10 +37,10 @@ const PortfolioItem = ({
             </a>
           </div>
         </div>
-        <span className="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">
+        <span className="pt-5 text-[14px] font-normal text-gray-lite block text-[#A6A6A6]">
           {description}
         </span>
-        <h2 className="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+        <h2 className="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] text-white mt-2">
           {title}
         </h2>
       </div>

@@ -6,7 +6,7 @@ const Nav = () => {
         className={({ isActive }) =>
           isActive
             ? "bg-gradient-to-r w-full h-20 rounded-[10px] cursor-pointer font-poppins bg-[#FA5252] font-medium mx-2.5 text-xtiny text-white justify-center flex flex-col items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]"
-            : "w-full h-20 rounded-[10px] cursor-pointer font-poppins bg-[#F3F6F6] font-medium mx-2.5 text-xtiny text-gray-lite dark:text-[#A6A6A6] justify-center flex flex-col items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]"
+            : "w-full h-20 rounded-[10px] cursor-pointer font-poppins  font-medium mx-2.5 text-xtiny text-gray-lite text-[#A6A6A6] justify-center flex flex-col items-center transition-all duration-300 ease-in-out hover:text-white bg-[#212425] hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]"
         }
         to="/"
       >
@@ -29,7 +29,7 @@ const Nav = () => {
         className={({ isActive }) =>
           isActive
             ? "bg-gradient-to-r w-full h-20 rounded-[10px] cursor-pointer font-poppins bg-[#FA5252] font-medium mx-2.5 text-xtiny text-white justify-center flex flex-col items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]"
-            : "w-full h-20 rounded-[10px] cursor-pointer font-poppins bg-[#F3F6F6] font-medium mx-2.5 text-xtiny text-gray-lite dark:text-[#A6A6A6] justify-center flex flex-col items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]"
+            : "w-full h-20 rounded-[10px] cursor-pointer font-poppins font-medium mx-2.5 text-xtiny text-gray-lite text-[#A6A6A6] justify-center flex flex-col items-center transition-all duration-300 ease-in-out hover:text-white bg-[#212425] hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]"
         }
         to="/resume"
       >
@@ -73,7 +73,7 @@ const Nav = () => {
         className={({ isActive }) =>
           isActive
             ? "bg-gradient-to-r w-full h-20 rounded-[10px] cursor-pointer font-poppins bg-[#FA5252] font-medium mx-2.5 text-xtiny text-white justify-center flex flex-col items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]"
-            : "w-full h-20 rounded-[10px] cursor-pointer font-poppins bg-[#F3F6F6] font-medium mx-2.5 text-xtiny text-gray-lite dark:text-[#A6A6A6] justify-center flex flex-col items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]"
+            : "w-full h-20 rounded-[10px] cursor-pointer font-poppins font-medium mx-2.5 text-xtiny text-gray-lite text-[#A6A6A6] justify-center flex flex-col items-center transition-all duration-300 ease-in-out dark:hover:text-white bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]"
         }
         to="/portfolio"
       >
@@ -103,7 +103,7 @@ const Nav = () => {
         className={({ isActive }) =>
           isActive
             ? "bg-gradient-to-r w-full h-20 rounded-[10px] cursor-pointer font-poppins bg-[#FA5252] font-medium mx-2.5 text-xtiny text-white justify-center flex flex-col items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]"
-            : "w-full h-20 rounded-[10px] cursor-pointer font-poppins bg-[#F3F6F6] font-medium mx-2.5 text-xtiny text-gray-lite dark:text-[#A6A6A6] justify-center flex flex-col items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]"
+            : "w-full h-20 rounded-[10px] cursor-pointer font-poppins  font-medium mx-2.5 text-xtiny text-gray-lite text-[#A6A6A6] justify-center flex flex-col items-center transition-all duration-300 ease-in-out dark:hover:text-white bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476]"
         }
         to="/contact"
       >
