@@ -159,11 +159,11 @@ const Card = () => {
 
           {/* Download CV Button */}
           <a
-            href="/Faaiz_Amir_Resume.pdf"
+            href="/Resume_FaaizAmir.pdf"
             download=""
             className="inline-flex items-center mx-auto bg-gradient-to-r  duration-300 transition ease-linear hover:bg-gradient-to-l from-[#DD2476] to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6"
           >
-            <img src="/download.png" alt="" className="mr-2" /> Download CV
+            <img src="/download.png" alt="" className="mr-2" /> Download Resume
           </a>
         </div>
       </div>
